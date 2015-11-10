@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta charset="utf-8"/>
+    <meta content="手上网" name="Copyright">
+    <meta content="基于移动互联的内容构建系统，一次构建，" name="description">
+    <meta content="移动互联网 app web 微信 微博 sns 内容 客服 crm 网站 商城 o2o" name="keywords">
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link href="static/Font-Awesome-3.2.1/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="static/css/common.css" rel="stylesheet" type="text/css">
+    <link href="static/css/home.css" rel="stylesheet" type="text/css">
+
+    <script src="static/js/jquery-1.9.1.js"></script>
+    <script src="static/js/jquery.json-2.2.js"></script>
+    <script src="static/js/common.js"></script>
+    <script src="static/js/modernizr.js"></script>
+
+    <script>
+        var click = 'click',
+                supportTouch = false;
+        if ("ontouchend" in document) {
+            document.write('<script src="static/js/vMouse.js"><\/script>');
+            click = 'vclick';
+        }
+        ;
+    </script>
+    <style>
+    .content-index .customers {
+	width:100%;
+	height:720px;
+	overflow:hidden;
+	background:#f2f2f2
+}
+.content-index .customers .inner {
+	width:1260px;
+	min-width:1260px;
+	margin:0 auto;
+	padding-top:70px
+}
+.content-index .customers .inner .cust-info {
+	width:100%;
+	text-align:center
+}
+.content-index .customers .inner .cust-info tr:first-child td {
+	border-top:0
+}
+.content-index .customers .inner .cust-info tr td {
+	width:25%;
+	height:120px;
+	border-top:1px solid #dfdfdf
+}
+.content-index .customers .inner .cust-info tr td+td {
+	border-left:1px solid #dfdfdf
+}
+.content-index .customers .inner .cust-slogan {
+	text-align:center;
+	font-size:22px;
+	margin-top:55px
+}
+.cust-info a:hover{
+    color: #fff;
+}
+</style>
+</head>
+
+<body>
+<header>
+    <div class="k1000">
+        <div class="headTop">
+            <div class="headUser">
+                <a href="http://p.sbeq.com" class="loginIcon">登录</a>
+            </div>
+            <a href="#" title="" class="logo"></a>
+        </div>
+        <div class="navBar clearfix">
+            <div class="navBox">
+                <ul id="nav">
+                    <li class="visible-phone openNavLi"><a href="javascript:;" class="openNavIco"></a></li>
+                    <li class="headgun"><img width="28px;" height="28px;" src="static/img/small-logo.jpg">&nbsp;&nbsp;&nbsp;</li>
+                    <li><a href="/">首页</a></li>
+                    <li><a href="">新闻动态</a></li>
+                    <li><a href="">经典案例</a></li>
+                    <li><a href="http://p.sbeq.com/intoDLS">渠道代理</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </div>
+            <a href="http://dls.sbeq.com" class="navBarBtn btn greenBtn hidden-phone">代理商入口<i class="btnIcon"></i></a>
+        </div>
+    </div>
+    <script>
+        (function ($) {
+            var mainNav = $('#nav'),
+                    showNav = function () {
+                        if ($(window).width() < 768) {
+                            mainNav.addClass('phone_active');
+                        }
+                    },
+                    hideNav = function () {
+                        mainNav.removeClass('phone_active');
+                    };
+            mainNav.on({
+                mouseenter: showNav,
+                mouseleave: hideNav,
+                vclick: function (e) {
+                    e.stopPropagation();
+                    showNav();
+                }
+            });
+            $(document).on(click, hideNav);
+        })(jQuery);
+    </script>
+</header>
+<link href="static/css/newHome.css" rel="stylesheet" type="text/css">
+
+<div class="banner1 bannerText">
+    <div class="k1000">
+        <h1>手上网</h1>
+
+        <h3 style="max-width:800px;">移动互联网优先的内容构建系统（CBS）</h3>
+
+        <p style="color: #0055aa">个性定制，移动优先，整合营销，全时客服</p>
+
+        <div class="bannerBtn">
+            <a href="http://p.sbeq.com/intoFeed" class="btnB blueBtn">现在开始<i class="btnIconBig"></i></a>
+        </div>
+    </div>
+</div>
+<div class="k1240">
+    <div class="row2 tc">
+        <h2>手上网是什么</h2><br>
+        <h5 style="text-indent: 2em;text-align: left;">手上网致力于打造基于移动互联网的内容构建系统，通过设备识别和终端自适应技术，自动构建适应于电视、电脑、平板、手机及其它便携设备的网站。</h5><h5 style="text-indent: 2em;text-align: left;">灵活、便捷的客户互动自定义功能，能够很容易的对接微信、来往、易信等社交应用，同时提供一键生成专属App服务。</h5>
+
+          <div class="row2Banner">
+            <div class="row2Phone hidden-phone"></div>
+            <div class="row2Pad hidden-phone"></div>
+            <div class="row2Air hidden-phone"></div>
+            <div class="row2Mac hidden-phone"></div>
+        </div>
+         
+    </div>
+</div>
+<div class="grayBlcok">
+    <div class="row3 tc">
+        <h2>手上网是领先的快速内容构建平台</h2><br/>
+        <h5 style="max-width:900px; margin:0 auto;">十年以上经验的开发团队，使用HTML5，完全自主研发而成。<br>
+            用户在手上网使用模板快速创建微官网，自动适配电脑、手机、平板等不同尺寸的屏幕显示。<br>
+            自己修改排版、样式、内容和功能，快速打造个性独特、移动互联优先网站。
+        </h5>
+        <section>
+            <div class="roundRow">
+                <ul class=" clearfix">
+                    <li>
+                        <p class="roundRowBox"><i></i><img src="static/img/48_themes.png"></p>
+
+                        <div class="roundRowFoot">灵活定制</div>
+                    </li>
+                    <li>
+                        <p class="roundRowBox"><i></i><img src="static/img/n_i2.png"></p>
+
+                        <div class="roundRowFoot">个性内容</div>
+                    </li>
+                    <li>
+                        <p class="roundRowBox"><i></i><img src="static/img/48_carousel.png"></p>
+
+                        <div class="roundRowFoot">自动适配</div>
+                    </li>
+                    <li>
+                        <p class="roundRowBox"><i></i><img src="static/img/48_map.png"></p>
+
+                        <div class="roundRowFoot">简单易用</div>
+                    </li>
+                    <li>
+                        <p class="roundRowBox"><i></i><img src="static/img/48_jigsoar.png"></p>
+
+                        <div class="roundRowFoot">无缝对接</div>
+                    </li>
+                    <li>
+                        <p class="roundRowBox"><i></i><img src="static/img/48_account.png"></p>
+
+                        <div class="roundRowFoot">客户管理</div>
+                    </li>
+                    <li>
+                        <p class="roundRowBox"><i></i><img src="static/img/48_coffee.png"></p>
+
+                        <div class="roundRowFoot">自动客服</div>
+                    </li>
+                    <li>
+                        <p class="roundRowBox"><i></i><img src="static/img/48_comments.png"></p>
+
+                        <div class="roundRowFoot">消息推送</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="banner3">
+            <div class="banner3Div_1 hidden-phone"></div>
+            <div class="banner3Div_2 hidden-phone"></div>
+            <div class="banner3Div_3 hidden-phone"></div>
+        </div>
+    </div>
+</div>
+
+<div class="content-index">
+<section class="customers">
+    <div class="inner">
+      <table class="cust-info">
+        <tbody><tr>
+          <td><a href="＃"><span class="icon-adjust" style="font-size: 2em;"></span>灵活定制</a></td>
+          <td><a href="http://www.ccstor.com/"><img width="200px;" height="100px;" src="static/img/zhixinhutong.png"></a></td>
+          <td><a href="http://www.leine-mhatec.com/zh/"><img width="200px;" height="100px;" src="static/img/laima.png"></a></td>
+          <td><a href="http://www.beijinghome.com/"><img width="200px;" height="100px;" src="static/img/wenqilinghang.png"></a></td>
+        </tr>
+        <tr>
+          <td><img src="static/img/logo-lenovo.png"></td>
+          <td><img src="static/img/logo-toread.png"></td>
+          <td><img src="static/img/logo-colgate.png"></td>
+          <td><img src="static/img/logo-idg.png"></td>
+        </tr>
+        <tr>
+          <td><img src="static/img/logo-microsoft.png"></td>
+          <td><img src="static/img/logo-w3c.png"></td>
+          <td><img src="static/img/logo-zpark.png"></td>
+          <td><img src="static/img/logo-cyol.png"></td>
+        </tr>
+        <tr>
+          <td><img src="static/img/logo-lenovo.png"></td>
+          <td><img src="static/img/logo-toread.png"></td>
+          <td><img src="static/img/logo-colgate.png"></td>
+          <td><img src="static/img/logo-idg.png"></td>
+        </tr>
+      </tbody></table>
+      <div class="cust-slogan">
+
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="k1240">
+    <div class="homeList">
+        
+    </div>
+</div>
+
+<div class="grayRowBlock">
+    <div class="k1240 tc">
+        <div class="f18 c_2">免费创建&nbsp;&nbsp;<a href="http://p.sbeq.com/intoFeed" class="btnB blueBtn">现在开始<i
+                class="btnIconBig"></i></a></div>
+        <p></p>
+    </div>
+</div>
+<footer>
+    <div class="k1000">
+        <div class="newFooter clearfix" >
+            <div class="newFooterList_12" id="sharedDiv" style="text-align: center;">
+                <dl>
+                    <dt>联系我们</dt>
+                    <dd>
+                        <p>Tel :13120303456、13910237036</p>
+                        <p>QQ群: 342147490、342308810</p>
+                        <p>QQ: <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=59392473&site=qq&menu=yes">59392473</a>、<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2068828375&site=qq&menu=yes">2068828375</a>
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="copyright" style="margin-top:50px;">
+            <a href="#">京ICP备14016941号</a>
+
+            <p>Copyright&nbsp;© 2013-2014 手上网 All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+<a href="javascript:;" class="fixBackTop" title="回到顶部" id="fixBackTop"><i></i><b></b></a>
+<script>
+    ;
+    (function ($) {
+        $('a[role="qrcode"]', $('#sharedDiv')).on(click, function () {
+            var imgSrc = staticPath + '/images/weixin.jpg';
+            var str = '<div style="text-align:center; height:230px;">用微信扫描二维码，关注我们的公众号！<br /><br /><img src="' + imgSrc + '"  width="180" /></div>';
+            Alert(str);
+        });
+    })(jQuery);
+    if ($.browser.msie && $.browser.version < 10) {
+        $('<div style="padding:10px;">' + lowBrowserHtml + '</div>').prependTo('body');
+    }
+    ;
+    $('#fixBackTop').on(click, function () {
+        $(window).scrollTop(1);
+    });
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 56) {
+            $('#fixBackTop').show();
+            if ($('#nav').length) {
+                $('body').addClass('fixedHeader');
+            }
+        } else {
+            $('#fixBackTop').hide();
+            if ($('#nav').length) {
+                $('body').removeClass('fixedHeader');
+            }
+        }
+    });
+
+</script>
+</body>
+</html>

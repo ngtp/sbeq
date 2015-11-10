@@ -1,0 +1,325 @@
+@charset "utf-8";
+
+/* CSS Document */
+body {
+	width: 100%;
+	margin:0;
+	padding:0;
+	font:14px/1.5 AppleGothic,Arial,'Microsoft Yahei','Simsun';
+	background:#fff;
+	color:#666;
+	}
+body,html{
+	height:100%;
+	}
+mark{
+	background:none;
+	color:red;
+	}
+html, body,
+div, span, nav, p, img,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+input,
+article, section, header ,foot
+a{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box /0; }
+ 
+
+dl, dt, dd {
+  margin: 0;
+  padding: 0;
+  }
+a {
+  color: #666;
+  text-decoration: none;
+  }
+
+a:hover {
+  color: #333;
+  }
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+	
+input{
+	vertical-align:middle;
+	padding:0;
+	margin:0;
+	}
+	
+input[type=text],input[type=password]{
+  	border:1px solid #ccc;
+	background:#fff;
+	height:40px;
+	line-height:40px;
+	padding:0 5px;
+ 	color:#666;
+	font-size:14px;
+	border-radius:0;
+	box-shadow:none;
+	}
+.input-mini{
+	height:28px !important;
+	line-height:28px !important;
+	}
+input[type=text]:hover,input[type=password]:hover{
+	border:1px solid #999;
+	}
+
+input[type=text].focus,input[type=password].focus{
+	border:1px solid #A0C2FA;
+	}
+input[type=text].error,input[type=password].error{
+	border:1px solid #FF7575;
+	}
+input[type=text].success,input[type=password].success{
+	border:1px solid  #53A93F;
+	}
+input[type=text].smallinput,input[type=password].smallinput{
+	height:28px;
+	line-height:28px;
+	}
+input[type=checkbox],input[type=radio]{
+ 	margin-right:5px;
+	}
+footer{
+	background:#000;
+	border-top:8px solid #20ADFF;
+	padding:10px 0 30px 0;
+	}
+.copyright{
+	padding:30px 0 0 0;
+	color:#999;
+	text-align:center;
+	}
+.copyright a{
+	display:inline-block;
+	padding:0 8px;
+	transition:  0.1s ease-in 0s;
+	}	
+	
+.fromRow{
+	padding:50px  0 0 0;
+	line-height:160%;
+	}
+.fromRow li{
+		line-height:30px;
+		}
+.fromRowText{
+	width:105px;
+	display:inline-block;
+	float:left;
+	line-height:40px;
+	}
+.fromRowMain{
+	margin-left:105px;
+	}
+.fromRowBlock{
+	display:inline-block;
+	padding:5px 0 0 0;
+	font-size:12px;
+	}
+.fromBtn{
+	height:60px;
+	text-align:center;
+	display:inline-block;
+	background:#1FAEFF;
+	font-size:28px;
+	color:#fff;
+	line-height:60px;
+	padding:0 30px;
+	}
+.fromBtn:hover{
+	color:#fff;
+	opacity:0.8;
+	}
+	
+.loginPage{
+	padding:80px 0 0 0;
+	max-width:820px;
+	margin:0 auto 45px;
+ 	}
+.loginPageLeft{
+ 	width:50%;
+	float:left;
+	border-right:1px solid #DFDFDF;
+	padding:15px 0 0 0;
+	}
+.loginPageRight{
+	width:45%;
+	float:right;
+	padding:15px 0 0 0;
+	}
+.loginFromRow .fromRowMain{
+	width:280px;
+	margin-left:115px;
+	}
+.loginFromRow{
+	padding:0 0 40px 0;
+ 	}
+.loginFromRow .fromBtn{
+	display:block;
+	text-align:center;
+	}
+
+.loginFromRow input[type="text"],.loginFromRow input[type="password"]{
+		width:100% !important;}
+.loginFromRow .fromRowText{
+	text-align:right;
+	}
+.loginFromNotes{
+	padding:5px 0 0 0;
+	}
+
+@media screen and (max-width: 767px) {
+	.accountMain h1{
+		font-size:32px;
+		}
+	.accountMain h2{
+		font-size:24px;
+		}
+	
+	.loginPageLeft{
+		width: auto;
+		float: none;
+		border-right: none;
+		padding:15px 0 0 0;
+		}
+	.loginPageRight{
+		width: auto;
+		float: none;
+ 		padding:15px 0 0 0;
+		}
+	.loginFromRow .fromRowMain{
+		width: auto;
+		margin-left:0;
+		}
+	
+	.loginPage{
+		padding:10px 0 30px 0;
+	}
+	.loginFromRow .fromRowText{
+		text-align:left;
+	}
+ 
+}
+	/* CSS Document */
+.k1000{
+ 	margin:0 auto;
+	padding:0 50px;
+	max-width:1340px;
+ 	}
+
+.maxHeader .k1000{
+	max-width: none;
+	}
+.minniWidth{
+	max-width:1060px;
+	margin:0 auto;
+	padding:0 50px;
+	min-height:550px;
+	}
+	/* header */
+.pageYellow{
+	background:#FFD800;
+	color:#000;
+	padding:30px 0;
+	}
+.userK{
+	max-width: none;
+	margin:0 50px;
+	}
+.logo{
+	width:130px;
+	height:41px;
+	background:url(../images/home-logo.png) no-repeat;
+	display: block;
+ 	}
+.headTop{
+	padding:15px 0 0 0;
+	 }
+.headTop{
+	position:relative;
+	}
+.headUser{
+	position:absolute;
+	right:0;
+	top:15px;
+	}
+header{
+	background:#000;
+	}
+
+.navBar{
+	padding:15px 0;
+	position:relative;
+	}
+.navBarBtn{
+	position:absolute;
+	right:0;
+	top:15px;
+	}
+
+.navBox li{
+	display:inline-block;
+	float:left;
+	}
+.navBox li a{
+	font-size:16px;
+	color:#fff;
+	display:inline-block;
+	height:36px;
+	line-height:36px;
+	padding-right:35px;
+	transition:  0.2s ease-in 0s;
+	}
+.navBox li a:hover,.navBox li.active a{
+	color:#FFD800;
+	}
+.headUser a{
+	display:inline-block;
+	color:#fff;
+	margin-left:15px;
+	padding-right:18px;
+	background-image:url(../images/btnIco.png);
+	background-repeat:no-repeat;
+	transition:  0.2s ease-in 0s;
+	}
+
+	.navBox ul.phone_active  .openNavIco{	 
+		display:inline-block;
+		background:url(../images/openNavIco.gif) no-repeat center center #111;
+		}
+	.navBox ul li.openNavLi{
+		text-align:right;
+		background:none !important;
+		margin:0 !important;
+		padding:0 !important;
+		display:block !important;
+		height:62px;
+		}
+	.navBox ul li.openNavLi a{
+		height:62px;
+		width:62px;
+		line-height:62px;
+		display: inline-block;
+		}
